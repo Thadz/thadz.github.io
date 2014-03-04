@@ -12,20 +12,29 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
 
+    <!-- Pure CSS from YUI -->
+    <link rel="stylesheet" href="/css/pure-min.css">
+
   </head>
   <body>
     <div class="site">
       <div class="header">
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+        <div class="pure-g-r">
+          <div class="pure-u-1-1">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+          </div>
+        </div>
       </div>
 
       {{ content }}
 
       <div class="contact">
         <div class="footer">
-          <p>
-            <a href="https://github.com/thadz">github.com/thadz</a><br />
-          </p>
+          <div class="pure-g-r">
+            <div class="pure-u-1-1">
+              <a href="https://github.com/thadz">github.com/thadz</a><br />
+            </div>
+          </div>
         </div>
       </div>
 

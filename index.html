@@ -6,10 +6,14 @@ title: Θαδδαῖος
 <div id="home">
   <ul class="posts">
     {% for post in site.posts %}
-    <li>
-    <span>{{ post.date | date_to_string }}</span> &raquo;
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <li/>
+    <div class="pure-g-r">
+      <div class="pure-u-3-24">
+        <span>{{ post.date | date_to_string }}</span> &raquo;
+      </div>
+      <div class="pure-u-21-24">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+    </div>
     {% endfor %}
   </ul>
 </div>

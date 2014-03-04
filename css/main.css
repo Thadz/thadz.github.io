@@ -27,15 +27,20 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: #4488aa; text-decoration: none;}
+a:hover   { color: #a00000; }
+
+.greek-letter {
+    font-family: 'GFS Didot', serif;
+}
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] {
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: 'Vollkorn', serif;
 }
+
+ol, ul {padding: 0px 10px;}
 
 /*****************************************************************************/
 /*
@@ -53,7 +58,6 @@ html, button, input, select, textarea,
 
 .posts span {
   color: #aaa;
-  font-family: Monaco, 'Anonymous Pro', "Courier New", monospace;
   font-size: 80%;
 }
 

@@ -90,14 +90,6 @@ ol, ul {padding: 0px 10px;}
   color: #a00;
 }
 
-.title a:hover {
-  color: #000;
-}
-
-.header a.extra {
-  color: #aaa;
-}
-
 .header a.extra:hover {
   color: #000;
 }

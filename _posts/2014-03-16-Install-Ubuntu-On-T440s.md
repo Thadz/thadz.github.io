@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "install ubuntu on t440s"
+title: "Install Ubuntu On T440s"
 categories: article
 tags: t440s, thinkpad, ubuntu
 ---

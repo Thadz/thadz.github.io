@@ -66,6 +66,8 @@ Section "InputClass"
 EndSection
 {% endhighlight %}
 
+Now it support middle key and three-finger tap as middle key as well.
+
 # [Setting Charging Threshold] (https://github.com/teleshoes/tpacpi-bat)
 
 According to the recent discussion in Lenovo forum, the feature to set the charging threshold has been removed in Windows 8. Luckily in Linux, we are still able to set such threshold by altering the modules in the kernel. 
@@ -77,3 +79,29 @@ tpacpi-bat -s SP 1 80
 tpacpi-bat -s ST 2 60
 tpacpi-bat -s SP 2 80
 {% endhighlight %}
+
+# Swap Ctrl with Caps Lock and Alt with Tab
+
+As a heavy Emacs user, the swapping is a must. First we can type
+
+{% highlight bash %}
+sudo apt-get install xkeycaps
+{% endhighlight %}
+
+Invoke the key-map tweaker by
+
+{% highlight bash %}
+xkeycaps
+{% endhighlight %}
+
+After remapping the key positions, put the following in **~/.profile**
+
+{% highlight bash %}
+xmodmap ~/.xmodmap-`uname -n`
+{% endhighlight %}
+
+# Other miscs:
+* Numix theme
+* zsh and oh-my-zsh
+* rxvt-unicode
+* keylock-indicator and cpufreq-indicator

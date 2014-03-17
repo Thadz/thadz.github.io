@@ -104,5 +104,11 @@ xmodmap ~/.xmodmap-`uname -n`
 * Numix theme
 * zsh and oh-my-zsh
 * rxvt-unicode
+
+{% highlight bash %}
+sudo update-alternatives --config x-terminal-emulator
+gsettings set org.gnome.desktop.default-applications.terminal exec 'urxvt'
+{% endhighlight %}
+
 * keylock-indicator and cpufreq-indicator
 * gitconfig

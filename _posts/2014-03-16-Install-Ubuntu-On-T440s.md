@@ -105,3 +105,4 @@ xmodmap ~/.xmodmap-`uname -n`
 * zsh and oh-my-zsh
 * rxvt-unicode
 * keylock-indicator and cpufreq-indicator
+* gitconfig

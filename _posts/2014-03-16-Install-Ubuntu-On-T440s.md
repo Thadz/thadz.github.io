@@ -5,20 +5,20 @@ categories: article
 tags: t440s, thinkpad, ubuntu
 ---
 
-Recently I bought a Thinkpad T440s. The latest Windows 8.1 looks really gorgeous, but it is so different from any previous versions that I am almost learning to use a whole new OS. Given that I seldom use Windows for development, I decided to only install Ubuntu on my laptop. The process of installing is nothing new, except that one needs to remember disable all UEFI settings in BIOS. Otherwise, the computer wouldn't load Ubuntu. 
+Recently I bought a Thinkpad T440s. The latest Windows 8.1 looks really gorgeous, but it is so different from any previous version that I am almost using a whole new OS. Given that I seldom use Windows for development, I decided to only install Ubuntu on my laptop. The process of installing is nothing new, except that one needs to remember to disable all UEFI settings in BIOS. Otherwise, the computer wouldn't load Ubuntu. 
 
 # Disable UEFI settings
 
 When the compter starts, press **ENTER** or **F1** to go to the **BIOS** menu. Then go to **Security** page, select **Secure Boot**, disable **Secure Boot**. Later, go back to the top level, and go to **Startup** page, change **UEFI/Legacy Boot** to **Both** and **UEFI/Legacy Boot Priority** to **Legacy First**. You may also need to tweak the **Boot** order for loading the installation media.
 
 # [Thinkpad Touchpad Driver] (https://github.com/ScottGarman/thinkpad_t440s)
-By default, the touchpad doesn't suppor middle key etc. To add the support for this, we need to first deactivate gnome setting by
+By default, the touchpad doesn't support middle key etc. To add the support for this, we need to first deactivate gnome settings by
 
 {% highlight bash %}
 sudo apt-get install dconf-editor
 {% endhighlight %}
 
-uncheck the "active" option in **org.gnome.settings-daemon.plugins.mouse**.
+Then, uncheck the "active" option in **org.gnome.settings-daemon.plugins.mouse**.
 
 Now create a file named as **99-synaptics-t440s.conf** under **/etc/X11/xorg.conf.d/** and paste the following in the file.
 
@@ -66,19 +66,20 @@ Section "InputClass"
 EndSection
 {% endhighlight %}
 
-Now it support middle key and three-finger tap as middle key as well.
+Now you should be able to use the middle key on the top of the touchpad. More coveniently, tap the touchpad with three fingers can also function as the middle key pressing.
 
 # [Setting Charging Threshold] (https://github.com/teleshoes/tpacpi-bat)
 
 According to the recent discussion in Lenovo forum, the feature to set the charging threshold has been removed in Windows 8. Luckily in Linux, we are still able to set such threshold by altering the modules in the kernel. 
 
-For me I simply put
+For me, I prefer batteries to start to charge below 60% and stop above 90%. So I simply put
 {% highlight bash %}
 tpacpi-bat -s ST 1 60
-tpacpi-bat -s SP 1 80
+tpacpi-bat -s SP 1 90
 tpacpi-bat -s ST 2 60
-tpacpi-bat -s SP 2 80
+tpacpi-bat -s SP 2 90
 {% endhighlight %}
+
 
 # Swap Ctrl with Caps Lock and Alt with Tab
 
@@ -88,7 +89,7 @@ As a heavy Emacs user, the swapping is a must. First we can type
 sudo apt-get install xkeycaps
 {% endhighlight %}
 
-Invoke the key-map tweaker by
+Next, invoke the key-map tweaker by
 
 {% highlight bash %}
 xkeycaps
@@ -102,6 +103,7 @@ xmodmap ~/.xmodmap-`uname -n`
 
 # Other miscs:
 * Numix theme
+* apt-fast
 * zsh and oh-my-zsh
 * rxvt-unicode
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "STAT928 Reading Notes"
+title: "STAT928 Reading Notes, Ongoing"
 categories: article
 tags: statistical learning, machine learning
 ---
@@ -20,7 +20,9 @@ That is the motivation for the pursuit of a distribution-free framework. If you
 are in the data science field long enough, you must have heard of Vapnik and
 Chervonenkis. Their work on VC-dimension is about the distribution-free approach.
 Though being distribution free, we also know there is no free lunch. We have to
-encode the prior in the framework somehow. So a performance metric is proposed
+encode the prior in the framework somehow. So a performance metric, known as
+regret, is proposed
 
-<div>$\textit{E}\;\cal{l}(\hat{y}, (X,Y))-\inf_{f\in\cal{F}}\textit{E}\;\cal{l}(f,(X,Y))$</div>
+$\textit{E}\;\cal{l}(\hat{y}, (X,Y))-\inf_{f\in\cal{F}}\textit{E}\;\cal{l}(f,(X,Y))$
 
+To encode our bias, we simply limit the scope of $\cal{F}$.

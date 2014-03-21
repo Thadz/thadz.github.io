@@ -42,6 +42,12 @@ html, button, input, select, textarea,
 
 ol, ul {padding: 0px 10px;}
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*****************************************************************************/
 /*
 /* Home

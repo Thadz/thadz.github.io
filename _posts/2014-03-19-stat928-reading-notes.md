@@ -36,5 +36,7 @@ distribution-free skeleton, one can push the prior into the comparator term
 
 <p>$\frac{1}{n}\sum^n_{t=1}\cal{l}(\hat{y}_t,z_t)-\inf_{\pi\in\cal{\Pi}}\frac{1}{n}\sum^n_{t=1}\cal{l}(\pi_{t}(z^{t-1}),z_t)$</p>
 
-One needs to notice that the regret being small does not mean the predictor is good. It only means the predictor performs pretty well under the assumption that $\cal{F}$ captures the nature of sequences being observed.
+One needs to notice that the regret being small does not mean the predictor is
+good. It only means the predictor performs pretty well under the assumption that
+$\cal{F}$ captures the nature of sequences being observed.
 

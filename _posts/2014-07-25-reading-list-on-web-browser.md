@@ -34,3 +34,9 @@ tags: browser
    Robert O'Callahan
 
    The author asks many big-picture-like questions, which are worth thinking for almost all the web application developers.
+
+6. [Establishing Browser Security Guarantees through Formal Shim Verification](http://goto.ucsd.edu/quark/usenix12.pdf)
+
+   Dongseok Jang, Zachary Tatlock, Sorin Lerner
+
+   A very interesting project. They built a browser kernel inside the theorem prover and actually proved the correctness of the kernel using Coq. This broadens the range of how we think of software engineering and sheds light on building highly reliable software systems.

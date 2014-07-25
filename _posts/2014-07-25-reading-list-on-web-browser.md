@@ -28,3 +28,9 @@ tags: browser
    Adam Barth, Collin Jackson, Charles Reis, Google Chrome Team
 
    This paper presents the very primitive motivation for the architecture of Chromium broswer with security bearing in mind.
+
+5. [Mozilla Rust And Servo](http://people.mozilla.org/~roc/Samsung/MozillaRustAndServo.pdf)
+
+   Robert O'Callahan
+
+   The author asks many big-picture-like questions, which are worth thinking for almost all the web application developers.

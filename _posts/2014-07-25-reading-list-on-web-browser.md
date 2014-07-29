@@ -40,3 +40,7 @@ tags: browser
    Dongseok Jang, Zachary Tatlock, Sorin Lerner
 
    A very interesting project. They built a browser kernel inside the theorem prover and actually proved the correctness of the kernel using Coq. This broadens the range of how we think of software engineering and sheds light on building highly reliable software systems.
+
+1. [A browser for the HTML5 era](http://breach.cc/)
+
+   This is another very interesting and experimental project, which is written entirely in Javascript, taking advantages provided by Chromium, Node.js, and HTML/JS/CSS.

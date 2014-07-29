@@ -44,3 +44,7 @@ tags: browser
 1. [A browser for the HTML5 era](http://breach.cc/)
 
    This is another very interesting and experimental project, which is written entirely in Javascript, taking advantages provided by Chromium, Node.js, and HTML/JS/CSS.
+
+1. [Process Models](http://dev.chromium.org/developers/design-documents/process-models)
+
+   Everyone dealing with memory management of Chromium project should take a close look at this.

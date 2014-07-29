@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "new-era-of-browsers"
+title: "New Era of Browsers"
 categories: link
 tags: browser
 ---

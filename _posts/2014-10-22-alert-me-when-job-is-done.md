@@ -20,4 +20,4 @@ sudo apt-get install beep
 Now you are good to go.
 {% highlight bash %}
 anyCommandYouWant; beep
-{% enghighlight %}
+{% endhighlight %}

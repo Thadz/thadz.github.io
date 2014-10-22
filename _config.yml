@@ -1,6 +1,6 @@
 name: Readings about Physics, Maths and Computer Science/Logic
 markdown: redcarpet
-pygments: true
+pygments: pygments
 paginate: 5
 post:
   template: _post.txt

@@ -48,3 +48,7 @@ tags: browser
 1. [Process Models](http://dev.chromium.org/developers/design-documents/process-models)
 
     Everyone dealing with memory management of Chromium project should take a close look at this.
+
+1. [The Web Animations You've Always Wanted](http://alexjray.com/post/the_web_animations_you_have_always_wanted/)
+
+   Alex J. Ray
